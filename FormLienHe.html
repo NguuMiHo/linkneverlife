@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        body{
+            background-color: white;
+            padding: 0px 450px;
+            margin: 0px;
+        }
+        .khung>{
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .form-group{
+            margin: 10px 2px;
+        }
+        .form-control{
+            margin: 8px 14px;
+            padding: 11px;
+            border: none;
+            width: 340px;
+            border-radius: 3px;
+            box-shadow: 0 0 3px orange;
+            color: black;
+            display: block;
+            outline: none;
+        }
+        .form-control:focus{
+            box-shadow: 0 0 3px orangered;
+        }
+        .button{
+            border: none;
+            border-radius: 3px;
+            box-shadow: 0 0 3px orange;
+            padding: 11px;
+            margin: 8px 14px;
+            outline: none;
+        }
+        .button:focus{
+            box-shadow: 0 0 3px orangered;
+        }
+        .button:disabled{
+            text-decoration: line-through;
+        }
+        .line{
+            margin-top: 250px;
+            border: 1px solid white;
+        }
+    </style>
+</head>
+<body>
+    <div class="khung">
+        <form action="">
+            <img src="images/lienhe1.png" alt="">
+            <div form="class-group">
+                <div>Họ Tên</div>
+                <input type="text" class="form-control">
+            </div>
+            <div form="class-group">
+                <div>Số Điện Thoại</div>
+                <input type="text" class="form-control"
+                pattern="[+][8][4][0-9]{9}" required>
+            </div>
+            <div form="class-group">
+                <div>Email</div>
+                <input type="text" class="form-control"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" id="" required>
+            </div>
+            <div form="class-group">
+                <div>Nội Dung Liên Hệ</div>
+                <textarea name="notes" id="Notes" cols="30" rows="3" class="form-control"></textarea>
+            </div>
+            <div form="class-group">
+                <label>
+                    <input class="button" type="submit" value="Gửi">
+                    <input class="button" type="reset" value="Hủy" disabled>
+                </label>
+            </div>
+        </form>
+        <hr>
+        <h3 class="line">Thông tin liên hệ</h3>
+        <div>Phone: +84xxxxxxxxxx</div>
+        <div></div>Email: xxxxxxxxxxxxxx@gmail.com</div>
+        <div>       Hoặc liện hệ trực tiếp với chúng tôi tại đây</div>
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d501726.251541797!2d106.69522764999999!3d10.754792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529292e8d3dd1%3A0xf15f5aad773c112b!2zSOG7kyBDaMOtIE1pbmgsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaA!5e0!3m2!1svi!2s!4v1665281491357!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</body>
